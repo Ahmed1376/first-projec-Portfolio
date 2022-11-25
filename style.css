@@ -19,11 +19,10 @@
 
 header {
     min-height: 100vh;
-    background-color: #000016;
     display: flex;
     justify-content: space-between;
     background: var(--lightBlack);
-
+    background: black;
 
 }
 
@@ -43,7 +42,6 @@ header ul {
 
 header ul li {
     list-style: none;
-    /* padding-left: px; */
     margin: 12.5px;
 
 }
@@ -56,7 +54,7 @@ header nav a {
     text-transform: uppercase;
     font-size: 0.8em;
     font-weight: 800;
-    color: var(--ligtpink);
+    color: var(--greenColor);
 
 }
 
@@ -67,6 +65,10 @@ header h2 {
 header .logo a {
     color: var(--redColor);
 
+}
+
+.logo span {
+    color: var(--greenColor);
 }
 
 header ul li ::after {
