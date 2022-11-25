@@ -9,16 +9,21 @@
 }
 
 :root {
-    --redColor: rgb(238, 67, 67);
+    --redColor: #ff274b;
+    --ligtpink: #f7bcf7;
+    --black: #171a1c;
+    --lightBlack: #22282a;
     --greenColor: rgb(102, 255, 102);
 }
+
 
 header {
     min-height: 100vh;
     background-color: #000016;
     display: flex;
     justify-content: space-between;
-    padding: 12.5px 20px;
+    background: var(--lightBlack);
+
 
 }
 
@@ -38,7 +43,9 @@ header ul {
 
 header ul li {
     list-style: none;
-    padding-left: 10px;
+    /* padding-left: px; */
+    margin: 12.5px;
+
 }
 
 header h2 {
@@ -48,5 +55,31 @@ header h2 {
 header nav a {
     text-transform: uppercase;
     font-size: 0.8em;
-    padding: 10px;
+    font-weight: 800;
+    color: var(--ligtpink);
+
+}
+
+header h2 {
+    margin: 12.5px;
+}
+
+header .logo a {
+    color: var(--redColor);
+
+}
+
+header ul li ::after {
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: var(--redColor);
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+header ul li:hover ::after {
+    width: 100%;
 }
