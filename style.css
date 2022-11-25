@@ -17,7 +17,7 @@
 }
 
 
-header {
+.main {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
@@ -26,43 +26,45 @@ header {
 
 }
 
-header a {
+.main a {
     color: white;
     text-decoration: none;
 
 
 }
 
-header ul {
+.main ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-header ul li {
+.main ul li {
     list-style: none;
     margin: 12.5px;
 
 }
 
-header h2 {
+.main h2 {
     text-transform: uppercase;
+
 }
 
-header nav a {
+.main nav a {
     text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 0.8em;
     font-weight: 800;
     color: var(--greenColor);
 
 }
 
-header h2 {
+.main h2 {
     margin: 12.5px;
 }
 
-header .logo a {
+.main .logo a {
     color: var(--redColor);
 
 }
@@ -71,7 +73,7 @@ header .logo a {
     color: var(--greenColor);
 }
 
-header ul li ::after {
+.main ul li ::after {
     content: ' ';
     width: 0%;
     height: 2px;
@@ -82,6 +84,13 @@ header ul li ::after {
 
 }
 
-header ul li:hover ::after {
+.main ul li:hover ::after {
     width: 100%;
+}
+
+.main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
