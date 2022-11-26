@@ -25,6 +25,7 @@
     background: black;
     padding: 12.5px 20px;
 
+
 }
 
 .main a {
@@ -68,11 +69,14 @@
 
 .main .logo a {
     color: var(--redColor);
+    display: flex;
+    letter-spacing: 1px;
 
 }
 
 .logo span {
     color: var(--greenColor);
+    padding-left: 5px;
 }
 
 .main ul li ::after {
@@ -91,10 +95,68 @@
 }
 
 .content1 {
-    color: white;
+    text-align: center;
     position: fixed;
-    bottom: 50px;
-    display: block;
-    padding-bottom: 100px;
-    padding-left: 80px;
+    padding: 80px 35px;
+    color: white;
+
+}
+
+.content1 h1 {
+    font-size: 20px;
+    /* margin-bottom: 10px; */
+
+
+}
+
+.content1 .hello {
+    color: var(--redColor);
+}
+
+.content1 h1 span {
+
+    font-size: 35px;
+
+}
+
+.content1 .iam {
+    font-size: 25px;
+    color: var(--greenColor);
+}
+
+.content1 h2 {
+    font-size: 22px;
+    text-transform: lowercase;
+}
+
+.btn {
+    margin-top: 50px;
+}
+
+.btn h2 a {
+    background-color: white;
+    color: red;
+    border-radius: 25px;
+    text-align: center;
+    padding: 3px;
+    font-size: 20px;
+
+
+}
+
+.btn h2 {
+    border-radius: 50%;
+    /* margin-top: 45px; */
+}
+
+body {
+    height: 800px;
+}
+
+.upshow {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    color: rgb(109, 16, 16);
+    font-size: 35px;
 }
