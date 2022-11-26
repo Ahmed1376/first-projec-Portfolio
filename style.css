@@ -23,6 +23,7 @@
     justify-content: space-between;
     background: var(--lightBlack);
     background: black;
+    padding: 12.5px 20px;
 
 }
 
@@ -44,6 +45,7 @@
     list-style: none;
     margin: 12.5px;
 
+
 }
 
 .main h2 {
@@ -52,11 +54,11 @@
 }
 
 .main nav a {
-    text-transform: uppercase;
     text-transform: capitalize;
     font-size: 0.8em;
     font-weight: 800;
     color: var(--greenColor);
+
 
 }
 
@@ -88,9 +90,11 @@
     width: 100%;
 }
 
-.main div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content1 {
     color: white;
+    position: fixed;
+    bottom: 50px;
+    display: block;
+    padding-bottom: 100px;
+    padding-left: 80px;
 }
