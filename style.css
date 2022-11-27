@@ -6,6 +6,9 @@
     margin: 0px;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    text-decoration: none;
+    /* list-style: none; */
+
 }
 
 :root {
@@ -16,6 +19,34 @@
     --greenColor: rgb(102, 255, 102);
 }
 
+header {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+}
+
+header ul li a {
+    padding-left: 12px;
+    font-size: 13px;
+    text-transform: capitalize;
+    color: var(--ligtpink);
+    color: var(--ligtpink);
+
+
+}
+
 
 .main {
     min-height: 100vh;
@@ -24,53 +55,17 @@
     background: var(--lightBlack);
     background: black;
     padding: 12.5px 20px;
-
-
-}
-
-.main a {
-    color: white;
-    text-decoration: none;
-
-
-}
-
-.main ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.main ul li {
-    list-style: none;
-    margin: 12.5px;
-
-
-}
-
-.main h2 {
-    text-transform: uppercase;
-
-}
-
-.main nav a {
-    text-transform: capitalize;
-    font-size: 0.8em;
-    font-weight: 800;
-    color: var(--greenColor);
-
-
 }
 
 .main h2 {
     margin: 12.5px;
 }
 
-.main .logo a {
+header .logo a {
     color: var(--redColor);
     display: flex;
     letter-spacing: 1px;
+    text-transform: uppercase;
 
 }
 
@@ -79,8 +74,8 @@
     padding-left: 5px;
 }
 
-.main ul li ::after {
-    content: ' ';
+/* header ul li ::after {
+    content: '';
     width: 0%;
     height: 2px;
     display: block;
@@ -88,10 +83,25 @@
     margin: auto;
     transition: 0.5s;
 
+
 }
 
-.main ul li:hover ::after {
+header ul li:hover ::after {
     width: 100%;
+} */
+header ul li a {
+    padding: 1px 10px;
+}
+
+header ul li a {
+    transition: 0.5s;
+    margin-left: 3px;
+    border-radius: 13px;
+}
+
+header ul li a:hover,
+.active {
+    background-color: var(--redColor);
 }
 
 .content1 {
@@ -129,24 +139,30 @@
     text-transform: lowercase;
 }
 
-.btn {
-    margin-top: 50px;
+.content1 .btn {
+    margin-top: 65px;
+
 }
 
 .btn h2 a {
-    background-color: white;
+    background-color: var(--ligtpink);
     color: red;
-    border-radius: 25px;
-    text-align: center;
-    padding: 3px;
-    font-size: 20px;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 17.5px;
+    font-weight: bold;
+    margin-top: 50px;
 
 
 }
 
-.btn h2 {
-    border-radius: 50%;
-    /* margin-top: 45px; */
+.btn {
+    transition: 0.7s ease;
+}
+
+.btn :hover {
+    color: var(--redColor);
+    transform: scale(1.1);
 }
 
 body {
