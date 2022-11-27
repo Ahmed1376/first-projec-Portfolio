@@ -52,9 +52,11 @@ header ul li a {
     min-height: 100vh;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: var(--lightBlack);
-    background: black;
     padding: 12.5px 20px;
+    background-color: black;
+
 }
 
 .main h2 {
@@ -71,7 +73,7 @@ header .logo a {
 
 .logo span {
     color: var(--greenColor);
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 /* header ul li ::after {
@@ -102,21 +104,36 @@ header ul li a {
 header ul li a:hover,
 .active {
     background-color: var(--redColor);
+
 }
 
-.content1 {
+.main .content1 {
     text-align: center;
     position: fixed;
-    padding: 80px 35px;
+    padding: 180px 35px;
     color: white;
+    display: inline-block;
+    margin-top: 45px;
+}
+
+.img {
+    position: fixed;
+    right: 40px;
 
 }
 
-.content1 h1 {
+.img img {
+    width: 180px;
+    border-radius: 20px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+
+
+
+}
+
+s .content1 h1 {
     font-size: 20px;
-    /* margin-bottom: 10px; */
-
-
 }
 
 .content1 .hello {
@@ -156,8 +173,8 @@ header ul li a:hover,
 
 }
 
-.btn {
-    transition: 0.7s ease;
+.btn a {
+    transition: 0.5s ease;
 }
 
 .btn :hover {
