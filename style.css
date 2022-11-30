@@ -117,14 +117,15 @@ header ul li a:hover,
 }
 
 .img {
-    position: fixed;
+    display: flex;
+    padding-left: 650px;
+    padding-bottom: 90px;
     right: 40px;
 
 }
 
 .img img {
     width: 180px;
-    border-radius: 20px;
     border-radius: 25px;
     margin-bottom: 50px;
 
@@ -186,10 +187,15 @@ body {
     height: 800px;
 }
 
-.upshow {
+.up {
     position: fixed;
-    bottom: 15px;
+    bottom: 10px;
+    right: -150px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.up.show {
     right: 15px;
-    color: rgb(109, 16, 16);
-    font-size: 35px;
 }
