@@ -17,16 +17,26 @@
     --black: #171a1c;
     --lightBlack: #22282a;
     --greenColor: rgb(102, 255, 102);
+    --whiteColor: #f0f0f0e7;
+}
+
+:root {
+    --redColor: #fb526e;
+    --ligtpink: #f7bcf7;
+    --black: #171a1c;
+    --lightBlack: #22282a;
+    --greenColor: rgb(135, 236, 135);
 }
 
 header {
     width: 100%;
-    padding: 15px 40px;
+    padding: 5px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     position: fixed;
+    z-index: 999;
 
 }
 
@@ -49,7 +59,7 @@ header ul li a {
 
 
 .main {
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,32 +118,31 @@ header ul li a:hover,
 }
 
 .main .content1 {
-    text-align: center;
-    position: fixed;
+    position: absolute;
     padding: 180px 35px;
-    color: white;
-    display: inline-block;
-    margin-top: 45px;
+    color: rgba(255, 255, 255, 0.927);
+    text-align: center;
+    margin-top: 0px;
+
 }
+
 
 .img {
     display: flex;
-    padding-left: 650px;
+    padding-left: 600px;
     padding-bottom: 90px;
     right: 40px;
 
 }
 
 .img img {
-    width: 180px;
-    border-radius: 25px;
+    width: 200px;
+    height: 250px;
+    border-radius: 35px;
     margin-bottom: 50px;
-
-
-
 }
 
-s .content1 h1 {
+.content1 h1 {
     font-size: 20px;
 }
 
@@ -162,29 +171,43 @@ s .content1 h1 {
 
 }
 
-.btn h2 a {
-    background-color: var(--ligtpink);
-    color: red;
+.content1 .btn a {
+    /* background: white; */
+    /* color: rgb(50, 255, 94); */
+    position: absolute;
+    color: var(--greenColor);
+    color: darkred;
+    color: var(--greenColor);
     border-radius: 15px;
-    padding: 5px;
+    border-radius: 50%;
+    padding: 7px;
     font-size: 17.5px;
     font-weight: bold;
-    margin-top: 50px;
-
-
-}
-
-.btn a {
+    display: flex;
+    margin-left: 120px;
     transition: 0.5s ease;
+    /* background-color: rgb(253, 235, 238); */
+
 }
 
 .btn :hover {
+    background-color: var(--ligtpink);
+    background-color: var(--redColor);
+
+}
+
+.content1 .a1 {
     color: var(--redColor);
-    transform: scale(1.1);
+    font-weight: 900;
+}
+
+.content1 .a2 {
+    color: var(--greenColor);
+    font-weight: 900;
 }
 
 body {
-    height: 800px;
+    /* height: 2800px; */
 }
 
 .up {
@@ -198,4 +221,45 @@ body {
 
 .up.show {
     right: 15px;
+}
+
+.second {
+    height: 100vh;
+    width: 100%;
+    background-image: url(background/Samsung\ A50\ Gold.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 70px;
+
+
+}
+
+section .second,
+.aboutMe,
+.notrelated {
+    /* color: var(--greenColor); */
+    color: white;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(134, 56, 56);
+    border-radius: 30px;
+    /* text-align: center; */
+    align-items: center;
+    padding: 15px;
+
+}
+
+section .notrelated ul li {
+    align-items: center;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.notrelated .entry {
+
+    letter-spacing: 1px;
+    font-weight: bold;
 }
