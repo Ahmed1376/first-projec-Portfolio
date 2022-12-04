@@ -66,7 +66,7 @@ header ul li a {
     background: var(--lightBlack);
     padding: 12.5px 20px;
     background-color: black;
-
+    flex-direction: row;
 }
 
 .main h2 {
@@ -237,18 +237,60 @@ body {
 
 }
 
+.aboutTitle {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    padding-left: 330px;
+
+}
+
+.aboutTitle .a2 {
+    color: rgb(134, 56, 56);
+
+}
+
+.aboutTitle .m2 {
+    color: rgb(134, 56, 56);
+
+}
+
+.second .aboutTitle {
+    position: absolute;
+    top: 35px;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    margin-top: 425px;
+    align-items: center;
+
+}
+
+.second .aboutTitle {
+    letter-spacing: 2px;
+    font-family: serif;
+    line-height: 1.7;
+
+}
+
+.second .aboutTitle .me {
+    margin-left: 10px;
+}
+
 section .second,
 .aboutMe,
 .notrelated {
-    /* color: var(--greenColor); */
     color: white;
     width: 300px;
     height: 300px;
     background-color: rgb(134, 56, 56);
     border-radius: 30px;
-    /* text-align: center; */
     align-items: center;
     padding: 15px;
+
 
 }
 
