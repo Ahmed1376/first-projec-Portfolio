@@ -66,6 +66,7 @@ header ul li a {
     background: var(--lightBlack);
     padding: 12.5px 20px;
     background-color: black;
+    background-color: #000016;
     flex-direction: row;
 }
 
@@ -174,20 +175,15 @@ header ul li a:hover,
 
 .content1 .btn a {
     position: absolute;
-    color: var(--greenColor);
-    color: darkred;
-    color: var(--greenColor);
-    color: whitesmoke;
     color: blue;
     border-radius: 15px;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 7px;
     font-size: 17.5px;
     font-weight: bold;
     display: flex;
     margin-left: 120px;
     transition: 0.5s ease;
-    /* background-color: rgb(244, 18, 18); */
     background-color: var(--ligtpink);
     transition: 0.5s ease;
 
@@ -195,6 +191,7 @@ header ul li a:hover,
 
 .content1 .btn a:hover {
     background-color: rgb(253, 66, 66);
+    transform: scale(1.1);
 }
 
 .btn :hover {
@@ -332,8 +329,8 @@ section .notrelated ul li {
 .projects {
     height: 100vh;
     width: 100%;
-    /* background-color: var(--lightBlack); */
-    background-color: rgb(171, 168, 168);
+    background-color: var(--lightBlack);
+    /* background-color: rgb(171, 168, 168); */
     background-position: center;
     background-size: cover;
 }
@@ -365,7 +362,16 @@ section .notrelated ul li {
     flex-direction: row;
     margin: 25px 46px;
     border-radius: 50%;
+}
 
+.projects .cardProj img {
+    transition: 0.8s ease;
+
+}
+
+.cardProj img:hover {
+    transform: scale(1.1);
+    transform: rotate(360deg);
 }
 
 .projects .h5 {
@@ -405,16 +411,10 @@ section .notrelated ul li {
 /* ============> */
 
 .footer {
-    width: 100%;
-    /* height: 100vh; */
-    /* background-image: url(/images/project-2.jpg); */
-    background-position: left;
-    background-size: 500px;
-    /* background-size: cover; */
-    background-repeat: no-repeat;
-    background-color: var(--lightBlack);
-    background-color: rgb(93, 87, 87);
+    background-color: rgb(0, 0, 0);
+    position: relative;
     opacity: 0.7;
+    height: 100vh;
 
 }
 
@@ -427,15 +427,7 @@ section .notrelated ul li {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-}
-
-.content-icons .form {
     padding-top: 60px;
-
-}
-
-.content-icons .form input {
-    margin-top: 10px;
 }
 
 .content-icons textarea {
@@ -448,8 +440,15 @@ section .notrelated ul li {
 }
 
 .social-icon i {
-    color: rgb(6, 6, 73);
-    color: rgb(153, 255, 0);
+    color: #f0f0f0;
     font-size: 25px;
     padding-left: 10px;
+}
+
+.footer h4 {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    padding-left: 5px;
+    font-size: 12.5px;
 }
