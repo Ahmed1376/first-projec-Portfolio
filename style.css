@@ -452,3 +452,7 @@ section .notrelated ul li {
     padding-left: 5px;
     font-size: 12.5px;
 }
+
+.footer {
+    background-color: #fb526e;
+}
