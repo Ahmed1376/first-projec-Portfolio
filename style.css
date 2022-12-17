@@ -446,6 +446,10 @@ section .notrelated ul li {
     padding-left: 10px;
 }
 
+.footer {
+    background-color: var(--lightBlack);
+}
+
 .footer h4 {
     color: white;
     position: absolute;
