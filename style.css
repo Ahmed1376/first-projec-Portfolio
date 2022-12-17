@@ -321,6 +321,12 @@ section .notrelated ul li {
     font-weight: bold;
 }
 
+.r {
+    color: rgb(14, 8, 83);
+    font-weight: bold;
+    padding-right: 10px;
+}
+
 .notrelated .entry {
     letter-spacing: 1px;
     font-weight: bold;
