@@ -170,16 +170,15 @@ header ul li a:hover,
 .content1 .btn {
     margin-top: 65px;
 
-
 }
 
 .content1 .btn a {
     position: absolute;
-    color: blue;
+    color: #000016;
     border-radius: 15px;
     border-radius: 10px;
-    padding: 7px;
-    font-size: 15px;
+    padding: 10px;
+    font-size: 12.5px;
     font-weight: bold;
     display: flex;
     margin-left: 120px;
@@ -190,14 +189,15 @@ header ul li a:hover,
 }
 
 .content1 .btn a:hover {
-    background-color: rgb(253, 66, 66);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    color: #ff274b;
+
 }
 
 .btn :hover {
-    background-color: var(--ligtpink);
-    background-color: var(--redColor);
-
+    /* background-color: var(--ligtpink); */
+    /* background-color: var(--redColor); */
+    /* color: #ff274b; */
 }
 
 .content1 .a1 {
