@@ -12,20 +12,13 @@
 }
 
 :root {
-    --redColor: #ff274b;
-    --ligtpink: #f7bcf7;
-    --black: #171a1c;
-    --lightBlack: #22282a;
-    --greenColor: rgb(102, 255, 102);
-    --whiteColor: #f0f0f0e7;
-}
-
-:root {
     --redColor: #fb526e;
     --ligtpink: #f7bcf7;
     --black: #171a1c;
     --lightBlack: #22282a;
     --greenColor: rgb(135, 236, 135);
+    --greenColor: rgb(102, 255, 102);
+    --whiteColor: #f0f0f0e7;
 }
 
 header {
